@@ -2,7 +2,6 @@ package org.example.domain
 
 import org.example.utils.encodeToString
 import org.example.utils.hash
-import org.example.utils.toBase64
 import java.security.PublicKey
 
 data class TransactionOutput(val recipient: PublicKey,
