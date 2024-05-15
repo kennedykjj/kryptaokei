@@ -1,5 +1,6 @@
-package org.example.utils
+package domain
 
+import org.example.utils.hash
 import java.time.Instant
 
 data class Block(val previousHash: String,
@@ -13,4 +14,5 @@ data class Block(val previousHash: String,
     fun calculateHash(): String {
         return "$previousHash$data$timestamp".hash()
     }
+
 }
