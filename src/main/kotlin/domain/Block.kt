@@ -11,7 +11,7 @@ data class Block(val previousHash: String,
         hash = calculateHash()
     }
 
-    fun calculateHash(): String {
+    private fun calculateHash(): String {
         return "$previousHash$data$timestamp".hash()
     }
 
